@@ -1,0 +1,549 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+/* selection instantiation */
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+/* Header Stylings */
+.dailydonate-header {
+  overflow: visible;
+  background-color: white;
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.dailydonate-mobile-title {
+  display: none !important;
+}
+
+
+.dailydonate-logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+
+.dailydonate-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .dailydonate-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .dailydonate-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+.dailydonate-navigation-title {
+    align-items: center;
+    justify-content: center;    
+}
+
+.dailydonate-navigation-title {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 5%;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 1, 0.2, 1);
+  }
+
+  .dailydonate-navigation-container-left {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 15%;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dailydonate-navigation-container-right {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 20%;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dailydonate-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+  .dailydonate-search-box.is-focused + .dailydonate-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .dailydonate-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .dailydonate-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #8bc34a;
+    }
+
+  .dailydonate-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .dailydonate-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.dailydonate-drawer {
+  border-right: none;
+}
+
+  .dailydonate-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .dailydonate-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .dailydonate-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .dailydonate .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+  }
+
+    .dailydonate-drawer .dailydonate-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.dailydonate-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.dailydonate-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.dailydonate-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.dailydonate-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .dailydonate-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.dailydonate-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.dailydonate-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.dailydonate-screen {
+  text-align: center;
+}
+
+.dailydonate-screen .dailydonate-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.dailydonate-image-link {
+  text-decoration: none;
+}
+
+.dailydonate-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .dailydonate-wear .dailydonate-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.dailydonate-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .dailydonate-phone .dailydonate-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.dailydonate-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .dailydonate-tablet .dailydonate-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .dailydonate-tablet .dailydonate-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.dailydonate-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .dailydonate-tv .dailydonate-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.dailydonate-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .dailydonate-auto .dailydonate-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.dailydonate-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.dailydonate-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.dailydonate-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .dailydonate-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.dailydonate-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .dailydonate-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .dailydonate-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.dailydonate-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .dailydonate-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .dailydonate-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.dailydonate-customized-section {
+  text-align: center;
+}
+
+.dailydonate-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .dailydonate-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.dailydonate-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.dailydonate-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .dailydonate-more-section .dailydonate-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.dailydonate-card-container {
+}
+
+  .dailydonate-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .dailydonate-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .dailydonate-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .dailydonate-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .dailydonate-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .dailydonate-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dailydonate-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.dailydonate-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .dailydonate-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.dailydonate-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .dailydonate-navigation-container {
+    display: none;
+  }
+
+  .dailydonate-title {
+    display: none !important;
+  }
+
+  .dailydonate-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .dailydonate.dailydonate-search-box.is-focused ~ .dailydonate-mobile-title,
+  .dailydonate-search-box.is-focused + .dailydonate-navigation-container + .dailydonate-mobile-title {
+    opacity: 0;
+  }
+
+  .dailydonate-more-button {
+    display: none;
+  }
+
+  .dailydonate-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .dailydonate-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .dailydonate-be-together-section {
+    height: 350px;
+  }
+
+  .dailydonate-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .dailydonate-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .dailydonate-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .dailydonate-create-character img {
+    height: 12px;
+  }
+
+  .dailydonate-fab {
+    display: none;
+  }
+
+  .dailydonate-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .dailydonate-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
